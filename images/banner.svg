@@ -1,0 +1,197 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="400" viewBox="0 0 1280 400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#050b17"/>
+      <stop offset="100%" stop-color="#090f1e"/>
+    </linearGradient>
+    <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#a5b4fc"/>
+      <stop offset="50%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+    <linearGradient id="barAmber" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="cardBg" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#0c1628"/>
+      <stop offset="100%" stop-color="#080e1c"/>
+    </linearGradient>
+    <linearGradient id="accentLine" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="1"/>
+      <stop offset="60%" stop-color="#10b981" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="dots" x="0" y="0" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="14" cy="14" r="0.8" fill="#1e2d4a" opacity="0.7"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="400" fill="url(#bg)"/>
+  <rect width="1280" height="400" fill="url(#dots)"/>
+
+  <!-- Soft ambient glows -->
+  <circle cx="160" cy="360" r="280" fill="#6366f1" opacity="0.05"/>
+  <circle cx="560" cy="20"  r="200" fill="#6366f1" opacity="0.03"/>
+  <circle cx="1060" cy="60" r="320" fill="#10b981" opacity="0.04"/>
+
+  <!-- ═══════════════════════════════════════
+       LEFT PANEL  (x: 56 → 620)
+  ═══════════════════════════════════════ -->
+
+  <!-- "For Claude Code" badge -->
+  <rect x="56" y="38" width="178" height="26" rx="13" fill="#0c1526" stroke="#1e3555" stroke-width="1"/>
+  <circle cx="76" cy="51" r="4.5" fill="#6366f1"/>
+  <text x="130" y="56"
+        font-family="'Courier New', Courier, monospace"
+        font-size="10" fill="#4a6a96" text-anchor="middle" letter-spacing="1.8">FOR CLAUDE CODE</text>
+
+  <!-- Main title -->
+  <text x="52" y="158"
+        font-family="'Arial Black', 'Helvetica Neue', Arial, sans-serif"
+        font-size="106" font-weight="900"
+        fill="url(#titleGrad)" letter-spacing="-5">GEO-SEO</text>
+
+  <!-- Gradient accent bar beneath title -->
+  <rect x="56" y="169" width="430" height="4" rx="2" fill="url(#accentLine)"/>
+
+  <!-- Subtitle -->
+  <text x="56" y="205"
+        font-family="'Helvetica Neue', Arial, sans-serif"
+        font-size="18" font-weight="300" fill="#cbd5e1" letter-spacing="9">SUITE</text>
+
+  <!-- Tagline -->
+  <text x="56" y="234"
+        font-family="'Helvetica Neue', Arial, sans-serif"
+        font-size="13" fill="#3d5a7a" letter-spacing="0.2">11 skills · 9 schemas · 5 Python utilities · PDF reports</text>
+
+  <!-- Platform pills -->
+  <rect x="56"  y="252" width="72"  height="21" rx="10.5" fill="#040e08" stroke="#0d4028" stroke-width="1"/>
+  <text x="92"  y="267" font-family="'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#34d399" text-anchor="middle">ChatGPT</text>
+
+  <rect x="136" y="252" width="78"  height="21" rx="10.5" fill="#0a0516" stroke="#2a1060" stroke-width="1"/>
+  <text x="175" y="267" font-family="'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#a78bfa" text-anchor="middle">Perplexity</text>
+
+  <rect x="222" y="252" width="66"  height="21" rx="10.5" fill="#040816" stroke="#152860" stroke-width="1"/>
+  <text x="255" y="267" font-family="'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#60a5fa" text-anchor="middle">Gemini</text>
+
+  <rect x="296" y="252" width="84"  height="21" rx="10.5" fill="#040816" stroke="#152860" stroke-width="1"/>
+  <text x="338" y="267" font-family="'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#60a5fa" text-anchor="middle">Google AIO</text>
+
+  <rect x="388" y="252" width="66"  height="21" rx="10.5" fill="#040a14" stroke="#0a2840" stroke-width="1"/>
+  <text x="421" y="267" font-family="'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#7dd3fc" text-anchor="middle">Copilot</text>
+
+  <rect x="462" y="252" width="60"  height="21" rx="10.5" fill="#120a04" stroke="#3a2010" stroke-width="1"/>
+  <text x="492" y="267" font-family="'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#e8c99a" text-anchor="middle">Claude</text>
+
+  <!-- Terminal / command block -->
+  <rect x="56" y="290" width="548" height="82" rx="8" fill="#030710" stroke="#111e34" stroke-width="1"/>
+  <circle cx="76"  cy="308" r="4.5" fill="#ff5f57"/>
+  <circle cx="93"  cy="308" r="4.5" fill="#febc2e"/>
+  <circle cx="110" cy="308" r="4.5" fill="#28c840"/>
+
+  <text x="76"  y="332" font-family="'Courier New', monospace" font-size="12" fill="#2d4a6a">$</text>
+  <text x="90"  y="332" font-family="'Courier New', monospace" font-size="12" fill="#6366f1">/geo audit</text>
+  <text x="194" y="332" font-family="'Courier New', monospace" font-size="12" fill="#4a6a90">https://example.com</text>
+
+  <text x="76"  y="354" font-family="'Courier New', monospace" font-size="12" fill="#2d4a6a">$</text>
+  <text x="90"  y="354" font-family="'Courier New', monospace" font-size="12" fill="#10b981">/geo report</text>
+  <text x="200" y="354" font-family="'Courier New', monospace" font-size="12" fill="#4a6a90">https://example.com</text>
+
+  <!-- ═══════════════════════════════════════
+       RIGHT PANEL — GEO SCORE CARD
+  ═══════════════════════════════════════ -->
+
+  <!-- Card shadow -->
+  <rect x="642" y="26" width="614" height="358" rx="14" fill="#020509" opacity="0.6"/>
+  <!-- Card body -->
+  <rect x="638" y="20" width="614" height="358" rx="14" fill="url(#cardBg)" stroke="#152035" stroke-width="1"/>
+
+  <!-- Card header strip -->
+  <rect x="638" y="20" width="614" height="46" rx="14" fill="#0c1b2e"/>
+  <rect x="638" y="48" width="614" height="18" fill="#0c1b2e"/>
+  <circle cx="664" cy="43" r="5" fill="#ff5f57"/>
+  <circle cx="681" cy="43" r="5" fill="#febc2e"/>
+  <circle cx="698" cy="43" r="5" fill="#28c840"/>
+  <text x="945" y="49"
+        font-family="'Courier New', monospace"
+        font-size="11" fill="#253f5a" text-anchor="middle" letter-spacing="2">GEO SCORE REPORT</text>
+
+  <!-- Score circle — cx=742, cy=208 -->
+  <circle cx="742" cy="208" r="68" fill="#040c18" stroke="#0f2040" stroke-width="1.5"/>
+  <!-- Track -->
+  <circle cx="742" cy="208" r="60" fill="none" stroke="#112030" stroke-width="9"/>
+  <!-- Progress arc: 87% of 2π×60 ≈ 376.99 → 327.9 dash, 49 gap, start from top -->
+  <circle cx="742" cy="208" r="60" fill="none"
+          stroke="url(#barGrad)" stroke-width="9"
+          stroke-dasharray="328 49"
+          stroke-linecap="round"
+          transform="rotate(-90 742 208)"/>
+  <text x="742" y="198"
+        font-family="'Arial Black', Arial, sans-serif"
+        font-size="42" font-weight="900" fill="#34d399" text-anchor="middle">87</text>
+  <text x="742" y="218"
+        font-family="'Courier New', monospace"
+        font-size="9" fill="#2d4a62" text-anchor="middle" letter-spacing="1.5">OUT OF 100</text>
+
+  <!-- Score label + badge -->
+  <text x="742" y="296"
+        font-family="'Courier New', monospace"
+        font-size="10" fill="#3d5a75" text-anchor="middle" letter-spacing="1.2">GEO SCORE</text>
+  <rect x="704" y="304" width="76" height="20" rx="10" fill="#031a0c" stroke="#0a4020" stroke-width="1"/>
+  <text x="742" y="318"
+        font-family="'Courier New', monospace"
+        font-size="9" fill="#10b981" text-anchor="middle">◆ STRONG</text>
+
+  <!-- Vertical divider -->
+  <line x1="826" y1="68" x2="826" y2="350" stroke="#0f2035" stroke-width="1"/>
+
+  <!-- Score bars — label at x=848, bar x=848→1108 (260px), score at x=1222 -->
+
+  <!-- Row 1 — AI Citability — 88 -->
+  <text x="848" y="104" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#5a7a96">AI Citability</text>
+  <text x="1222" y="104" font-family="'Courier New', monospace" font-size="11" fill="#34d399" text-anchor="end">88</text>
+  <rect x="848" y="108" width="260" height="5" rx="2.5" fill="#0c1a2c"/>
+  <rect x="848" y="108" width="229" height="5" rx="2.5" fill="url(#barGrad)"/>
+
+  <!-- Row 2 — Brand Authority — 72 -->
+  <text x="848" y="151" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#5a7a96">Brand Authority</text>
+  <text x="1222" y="151" font-family="'Courier New', monospace" font-size="11" fill="#f59e0b" text-anchor="end">72</text>
+  <rect x="848" y="155" width="260" height="5" rx="2.5" fill="#0c1a2c"/>
+  <rect x="848" y="155" width="187" height="5" rx="2.5" fill="url(#barAmber)"/>
+
+  <!-- Row 3 — E-E-A-T Content — 82 -->
+  <text x="848" y="198" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#5a7a96">E-E-A-T Content</text>
+  <text x="1222" y="198" font-family="'Courier New', monospace" font-size="11" fill="#34d399" text-anchor="end">82</text>
+  <rect x="848" y="202" width="260" height="5" rx="2.5" fill="#0c1a2c"/>
+  <rect x="848" y="202" width="213" height="5" rx="2.5" fill="url(#barGrad)"/>
+
+  <!-- Row 4 — Technical SEO — 85 -->
+  <text x="848" y="245" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#5a7a96">Technical SEO</text>
+  <text x="1222" y="245" font-family="'Courier New', monospace" font-size="11" fill="#34d399" text-anchor="end">85</text>
+  <rect x="848" y="249" width="260" height="5" rx="2.5" fill="#0c1a2c"/>
+  <rect x="848" y="249" width="221" height="5" rx="2.5" fill="url(#barGrad)"/>
+
+  <!-- Row 5 — Structured Data — 90 -->
+  <text x="848" y="292" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#5a7a96">Structured Data</text>
+  <text x="1222" y="292" font-family="'Courier New', monospace" font-size="11" fill="#34d399" text-anchor="end">90</text>
+  <rect x="848" y="296" width="260" height="5" rx="2.5" fill="#0c1a2c"/>
+  <rect x="848" y="296" width="234" height="5" rx="2.5" fill="url(#barGrad)"/>
+
+  <!-- Row 6 — Platform Opt. — 68 -->
+  <text x="848" y="339" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#5a7a96">Platform Opt.</text>
+  <text x="1222" y="339" font-family="'Courier New', monospace" font-size="11" fill="#f59e0b" text-anchor="end">68</text>
+  <rect x="848" y="343" width="260" height="5" rx="2.5" fill="#0c1a2c"/>
+  <rect x="848" y="343" width="177" height="5" rx="2.5" fill="url(#barAmber)"/>
+
+  <!-- Card footer -->
+  <line x1="654" y1="355" x2="1236" y2="355" stroke="#0f2035" stroke-width="1"/>
+  <text x="668" y="370" font-family="'Courier New', monospace" font-size="10" fill="#1e3450">example.com</text>
+  <text x="1236" y="370" font-family="'Courier New', monospace" font-size="10" fill="#1e3450" text-anchor="end">powered by /geo audit</text>
+
+</svg>

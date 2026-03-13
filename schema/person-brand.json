@@ -1,0 +1,43 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://YOURDOMAIN.com/about/#person",
+  "name": "YOUR_FULL_NAME",
+  "url": "https://YOURDOMAIN.com/about",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://YOURDOMAIN.com/images/YOUR_HEADSHOT.jpg",
+    "width": 400,
+    "height": 400
+  },
+  "description": "YOUR_BIO_SHORT",
+  "jobTitle": "YOUR_JOB_TITLE",
+  "worksFor": {
+    "@type": "Organization",
+    "@id": "https://YOURDOMAIN.com/#organization",
+    "name": "YOUR_ORGANIZATION_NAME"
+  },
+  "knowsAbout": [
+    "EXPERTISE_1",
+    "EXPERTISE_2",
+    "EXPERTISE_3"
+  ],
+  "award": [
+    "AWARD_NAME_1"
+  ],
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "UNIVERSITY_NAME"
+  },
+  "sameAs": [
+    "https://en.wikipedia.org/wiki/YOUR_WIKIPEDIA",
+    "https://www.wikidata.org/wiki/YOUR_WIKIDATA_ID",
+    "https://www.linkedin.com/in/YOUR_LINKEDIN",
+    "https://twitter.com/YOUR_TWITTER",
+    "https://github.com/YOUR_GITHUB",
+    "https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR",
+    "https://orcid.org/XXXX-XXXX-XXXX-XXXX",
+    "https://www.youtube.com/@YOUR_YOUTUBE",
+    "https://www.instagram.com/YOUR_INSTAGRAM"
+  ]
+}

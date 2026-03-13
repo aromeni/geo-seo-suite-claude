@@ -1,0 +1,34 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://YOURDOMAIN.com/faq/#faqpage",
+  "url": "https://YOURDOMAIN.com/faq",
+  "name": "Frequently Asked Questions — YOUR_SITE_NAME",
+  "description": "Answers to common questions about YOUR_TOPIC",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "QUESTION_TEXT_1",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ANSWER_TEXT_1"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "QUESTION_TEXT_2",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ANSWER_TEXT_2"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "QUESTION_TEXT_3",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ANSWER_TEXT_3"
+      }
+    }
+  ]
+}
