@@ -12,18 +12,18 @@ This skill aggregates outputs from all GEO audit skills into a single, professio
 ## How to Use This Skill
 
 1. Run the following audits first (or use existing report data):
-   - `geo-citability` -> GEO-CITABILITY-SCORE.md
-   - `geo-brand-mentions` -> GEO-BRAND-MENTIONS.md
-   - `geo-content` -> GEO-CONTENT-ANALYSIS.md
-   - `geo-technical` -> GEO-TECHNICAL-AUDIT.md
-   - `geo-schema` -> GEO-SCHEMA-REPORT.md
-   - `geo-platform-optimizer` -> GEO-PLATFORM-OPTIMIZATION.md
+   - `geo-citability` -> reports/GEO-CITABILITY-SCORE.md
+   - `geo-brand-mentions` -> reports/GEO-BRAND-MENTIONS.md
+   - `geo-content` -> reports/GEO-CONTENT-ANALYSIS.md
+   - `geo-technical` -> reports/GEO-TECHNICAL-AUDIT.md
+   - `geo-schema` -> reports/GEO-SCHEMA-REPORT.md
+   - `geo-platform-optimizer` -> reports/GEO-PLATFORM-OPTIMIZATION.md
    - (Optional) `geo-llmstxt` -> GEO-LLMSTXT-ANALYSIS.md
-   - (Optional) `geo-crawlers` -> GEO-CRAWLER-ACCESS.md
+   - (Optional) `geo-crawlers` -> reports/GEO-CRAWLER-ACCESS.md
 2. Collect all scores and findings
 3. Calculate the composite GEO Readiness Score
 4. Generate the client report using the template below
-5. Output: GEO-CLIENT-REPORT.md
+5. Output: reports/GEO-CLIENT-REPORT.md (create `reports/` folder if it does not exist)
 
 ---
 
@@ -392,7 +392,7 @@ Be conservative with estimates. State assumptions clearly. Never guarantee speci
 
 ## Output
 
-Generate **GEO-CLIENT-REPORT.md** using the complete template above, filled with actual audit data. The report should be:
+Generate **reports/GEO-CLIENT-REPORT.md** using the complete template above, filled with actual audit data. The report should be:
 - 40-80 pages equivalent in detail (3,000-6,000 words)
 - Ready to send to a client without editing
 - Self-contained (no references to other report files — all relevant data is included)

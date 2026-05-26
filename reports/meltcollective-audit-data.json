@@ -1,0 +1,128 @@
+{
+  "url": "https://www.meltcollective.co.uk",
+  "brand_name": "Melt Collective",
+  "date": "2026-03-13",
+  "geo_score": 34,
+  "scores": {
+    "citability": 35,
+    "brand": 28,
+    "content": 49,
+    "technical": 45,
+    "schema": 5,
+    "platform": 27
+  },
+  "findings": [
+    {
+      "severity": "critical",
+      "title": "No structured data (JSON-LD)",
+      "description": "Zero schema markup across all pages. Organization, Person, Service schemas all missing. Site is invisible to knowledge graph enrichment and AI entity recognition. Deploy Organization + Person x7 + Service x18 JSON-LD schemas. Estimated 4-8 hours. Highest-leverage single action available."
+    },
+    {
+      "severity": "critical",
+      "title": "robots.txt missing (404)",
+      "description": "No robots.txt exists. All AI crawler access is uncontrolled and unintentional. No Sitemap declaration for any search engine. Create robots.txt with explicit AI crawler Allow directives and Sitemap reference within 24 hours."
+    },
+    {
+      "severity": "critical",
+      "title": "sitemap.xml missing (404)",
+      "description": "No machine-readable content map. Search engines and AI crawlers must discover pages entirely via internal links. Generate sitemap.xml covering all 6 pages with lastmod dates. Submit to Google Search Console and Bing Webmaster Tools."
+    },
+    {
+      "severity": "critical",
+      "title": "No privacy policy — UK GDPR risk",
+      "description": "Google Analytics (G-5MRZ33RSPH) is actively tracking users with no visible privacy policy. This is a legal exposure under UK GDPR. Publish a privacy policy page immediately and link from footer on every page."
+    },
+    {
+      "severity": "critical",
+      "title": "No viewport meta tag",
+      "description": "Missing viewport declaration. Google mobile-first indexing penalises this site. Mobile users see unscaled desktop layout. Add viewport meta tag to every page head immediately."
+    },
+    {
+      "severity": "high",
+      "title": "llms.txt absent",
+      "description": "No llms.txt or llms-full.txt at domain root. Site provides no AI-readable structured context about its services, team, or content. Create /llms.txt declaring brand, services, key pages, and notable clients. 30-minute implementation."
+    },
+    {
+      "severity": "high",
+      "title": "No meta descriptions on any page",
+      "description": "All pages lack meta descriptions. Search engines generate unpredictable snippets. AI engines cannot use authoritative page summaries. Write unique 150-160 character meta descriptions for all pages."
+    },
+    {
+      "severity": "high",
+      "title": "No canonical tags",
+      "description": "Every page risks duplicate content indexation. /index.html referenced in nav alongside / creates duplication risk. Add self-referencing canonical tags to every page and fix index.html nav reference to /."
+    },
+    {
+      "severity": "high",
+      "title": "Open Graph tags absent",
+      "description": "No og:title, og:description, og:image on any page. LinkedIn shares and social previews show bare URLs. Critical for a B2B firm where deals are shared via LinkedIn."
+    },
+    {
+      "severity": "high",
+      "title": "No Google Business Profile",
+      "description": "No verified Google Business Profile found. Blocks Knowledge Panel eligibility — the primary entity recognition anchor for Google Gemini. Create and verify with full London NAP details."
+    },
+    {
+      "severity": "medium",
+      "title": "No case studies with outcomes",
+      "description": "60+ named enterprise clients listed but zero case studies with quantified results. AI systems cannot cite evidence of delivered value. Publish 3 anonymised case studies with metrics."
+    },
+    {
+      "severity": "medium",
+      "title": "Services pages too thin (31/100 citability)",
+      "description": "18 services each have one-sentence descriptions (~400 words total). Too short for AI citation or SEO ranking. Expand each service to a 500-800 word standalone page with FAQ-structure headings."
+    },
+    {
+      "severity": "medium",
+      "title": "No consultant credential pages",
+      "description": "7 named consultants listed without individual bio pages, credentials, LinkedIn links, or qualifications. Add individual pages for each consultant with credentials and LinkedIn sameAs links."
+    },
+    {
+      "severity": "medium",
+      "title": "Ethics page references 2019 document only",
+      "description": "Only external reference is RSS Guide from October 2019. No mention of EU AI Act 2024, UK AI Safety Institute, or ICO AI guidance. Rewrite as dated original position statement."
+    },
+    {
+      "severity": "low",
+      "title": "No security headers",
+      "description": "HSTS, X-Frame-Options, X-Content-Type-Options, CSP, and Referrer-Policy absent. Cloudflare free tier handles most automatically."
+    },
+    {
+      "severity": "low",
+      "title": "No CDN detected",
+      "description": "No edge caching detected. Enable Cloudflare free tier for edge caching, automatic WebP conversion, HTTP/2, and security headers."
+    },
+    {
+      "severity": "low",
+      "title": "Legacy image formats",
+      "description": "No WebP/AVIF detected for team photos or client logos. Re-encode all images to WebP and add width/height attributes to prevent CLS."
+    },
+    {
+      "severity": "low",
+      "title": "No Crunchbase profile",
+      "description": "No Crunchbase company profile found. Crunchbase is heavily indexed in AI training corpora. Submit a company profile — 30 minutes, high AI visibility ROI."
+    }
+  ],
+  "platform_scores": {
+    "google_aio": 28,
+    "chatgpt": 27,
+    "perplexity": 24,
+    "gemini": 22,
+    "bing_copilot": 27,
+    "brave": 34,
+    "duckduckgo": 27
+  },
+  "quick_wins": [
+    "Create robots.txt with Sitemap declaration and AI crawler Allow directives",
+    "Add viewport meta tag to every page",
+    "Create /llms.txt",
+    "Add Organization JSON-LD schema to homepage",
+    "Add meta descriptions to all pages",
+    "Publish privacy policy",
+    "Fix /index.html nav reference to /",
+    "Add canonical tags sitewide"
+  ],
+  "business_context": "B2B data science consulting collective. 7 named consultants, 18 specialist services, 60+ named enterprise clients including BBC, ITV, Google, Netflix, Sainsbury's. London-based. Tagline: Soft skills for hard problems.",
+  "ssr_severity": "LOW",
+  "crawler_access_score": 10
+}

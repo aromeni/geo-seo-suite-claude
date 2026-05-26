@@ -20,7 +20,7 @@ This skill evaluates content through two lenses:
 3. Assess content quality metrics (structure, readability, depth)
 4. Check for AI content quality signals
 5. Evaluate topical authority across the site
-6. Score and generate GEO-CONTENT-ANALYSIS.md
+6. Score and generate reports/GEO-CONTENT-ANALYSIS.md
 
 ---
 
@@ -274,7 +274,9 @@ Topical authority measures whether a site comprehensively covers a topic rather 
 
 ## Output Format
 
-Generate **GEO-CONTENT-ANALYSIS.md** with:
+Save output to `reports/GEO-CONTENT-ANALYSIS.md`. Create the `reports/` folder if it does not exist.
+
+Generate **reports/GEO-CONTENT-ANALYSIS.md** with:
 
 ```markdown
 # GEO Content Quality & E-E-A-T Analysis — [Domain]

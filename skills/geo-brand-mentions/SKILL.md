@@ -310,7 +310,9 @@ If competitors are identified, do a quick scan of their platform presence for co
 
 ## Output Format
 
-Generate a file called `GEO-BRAND-MENTIONS.md`:
+Save output to `reports/GEO-BRAND-MENTIONS.md`. Create the `reports/` folder if it does not exist.
+
+Generate a file called `reports/GEO-BRAND-MENTIONS.md`:
 
 ```markdown
 # Brand Authority Report: [Brand Name]

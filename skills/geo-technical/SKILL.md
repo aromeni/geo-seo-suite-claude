@@ -15,7 +15,7 @@ Technical SEO forms the foundation of both traditional search visibility and AI 
 2. Fetch each page using curl/WebFetch to get raw HTML and HTTP headers
 3. Run through each of the 8 audit categories below
 4. Score each category using the rubric
-5. Generate GEO-TECHNICAL-AUDIT.md with results
+5. Generate reports/GEO-TECHNICAL-AUDIT.md with results
 
 ---
 
@@ -401,7 +401,9 @@ ChatGPT uses Bing's index. Bing Copilot uses Bing's index. Faster Bing indexing 
 
 ## Output Format
 
-Generate **GEO-TECHNICAL-AUDIT.md** with:
+Save output to `reports/GEO-TECHNICAL-AUDIT.md`. Create the `reports/` folder if it does not exist.
+
+Generate **reports/GEO-TECHNICAL-AUDIT.md** with:
 
 ```markdown
 # GEO Technical SEO Audit — [Domain]

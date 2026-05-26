@@ -262,7 +262,9 @@ Disallow: /
 
 ## Output Format
 
-Generate a file called `GEO-CRAWLER-ACCESS.md`:
+Save output to `reports/GEO-CRAWLER-ACCESS.md`. Create the `reports/` folder if it does not exist.
+
+Generate a file called `reports/GEO-CRAWLER-ACCESS.md`:
 
 ```markdown
 # AI Crawler Access Report: [Domain]

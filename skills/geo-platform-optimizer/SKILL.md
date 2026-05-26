@@ -14,7 +14,7 @@ Only **11% of domains** are cited by BOTH ChatGPT and Google AI Overviews for th
 1. Collect the target URL and the site's primary topic/industry
 2. Run each platform checklist below against the site
 3. Score each platform on the 0-100 rubric
-4. Generate GEO-PLATFORM-OPTIMIZATION.md with per-platform scores, gaps, and action items
+4. Generate reports/GEO-PLATFORM-OPTIMIZATION.md with per-platform scores, gaps, and action items
 
 ---
 
@@ -236,7 +236,9 @@ Only **11% of domains** are cited by BOTH ChatGPT and Google AI Overviews for th
 
 ## Output Format
 
-Generate **GEO-PLATFORM-OPTIMIZATION.md** with the following structure:
+Save output to `reports/GEO-PLATFORM-OPTIMIZATION.md`. Create the `reports/` folder if it does not exist.
+
+Generate **reports/GEO-PLATFORM-OPTIMIZATION.md** with the following structure:
 
 ```markdown
 # GEO Platform Optimization Report — [Domain]

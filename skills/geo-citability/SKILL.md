@@ -213,7 +213,9 @@ For each block scoring below 60, generate a specific rewrite suggestion:
 
 ## Output Format
 
-Generate a file called `GEO-CITABILITY-SCORE.md`:
+Save output to `reports/GEO-CITABILITY-SCORE.md`. Create the `reports/` folder if it does not exist.
+
+Generate a file called `reports/GEO-CITABILITY-SCORE.md`:
 
 ```markdown
 # AI Citability Analysis: [Page Title]

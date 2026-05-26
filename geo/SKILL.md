@@ -195,22 +195,24 @@ Use a **skill** directly when you need a single focused output fast. Use `/geo a
 
 ## Output Files
 
-All commands generate structured output in the current working directory:
+All reports are saved to the `reports/` folder inside the current project directory. If a `reports/` folder does not exist in the working directory, create it before writing any output file.
+
+**PDF workflow:** After writing any `.md` report, always ask the user: *"Convert to PDF?"* and wait for their response before generating a PDF. Never auto-generate PDFs.
 
 | Command | Output File | Notes |
 |---------|------------|-------|
-| `/geo audit` | `GEO-AUDIT-REPORT.md` | Full composite report with all 5 agent sections |
-| `/geo page` | `GEO-PAGE-ANALYSIS.md` | Single-page deep analysis |
-| `/geo citability` | `GEO-CITABILITY-SCORE.md` | Passage-level citability scores |
-| `/geo crawlers` | `GEO-CRAWLER-ACCESS.md` | 12-crawler access matrix |
-| `/geo llmstxt` | `llms.txt` | Ready to deploy at domain root |
-| `/geo brands` | `GEO-BRAND-MENTIONS.md` | Sentiment + recency adjusted scores |
-| `/geo platforms` | `GEO-PLATFORM-OPTIMIZATION.md` | 8-platform scores (N/A platforms excluded from average) |
-| `/geo schema` | `GEO-SCHEMA-REPORT.md` + JSON-LD files | Schema report + generated templates as separate `.json` files |
-| `/geo technical` | `GEO-TECHNICAL-AUDIT.md` | Includes PSI field data if available |
-| `/geo content` | `GEO-CONTENT-ANALYSIS.md` | YMYL level and weight table used are shown prominently |
-| `/geo report` | `GEO-CLIENT-REPORT.md` | Presentation-ready client deliverable |
-| `/geo report-pdf` | `GEO-REPORT.pdf` | Professional PDF with charts (requires prior audit run) |
+| `/geo audit` | `reports/GEO-AUDIT-REPORT.md` | Full composite report with all 5 agent sections |
+| `/geo page` | `reports/GEO-PAGE-ANALYSIS.md` | Single-page deep analysis |
+| `/geo citability` | `reports/GEO-CITABILITY-SCORE.md` | Passage-level citability scores |
+| `/geo crawlers` | `reports/GEO-CRAWLER-ACCESS.md` | 12-crawler access matrix |
+| `/geo llmstxt` | `llms.txt` | Deploy at domain root (not in reports/) |
+| `/geo brands` | `reports/GEO-BRAND-MENTIONS.md` | Sentiment + recency adjusted scores |
+| `/geo platforms` | `reports/GEO-PLATFORM-OPTIMIZATION.md` | 8-platform scores (N/A platforms excluded from average) |
+| `/geo schema` | `reports/GEO-SCHEMA-REPORT.md` + JSON-LD files | Schema report + generated templates as separate `.json` files |
+| `/geo technical` | `reports/GEO-TECHNICAL-AUDIT.md` | Includes PSI field data if available |
+| `/geo content` | `reports/GEO-CONTENT-ANALYSIS.md` | YMYL level and weight table used are shown prominently |
+| `/geo report` | `reports/GEO-CLIENT-REPORT.md` | Presentation-ready client deliverable |
+| `/geo report-pdf` | `reports/GEO-REPORT.pdf` | Professional PDF with charts — only generate after user confirms |
 | `/geo quick` | Inline only (no file saved) | 5-check snapshot, ~90 seconds |
 
 ---

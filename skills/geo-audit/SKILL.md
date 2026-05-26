@@ -181,7 +181,9 @@ Every issue found during the audit is classified by severity:
 
 ## Output Format
 
-Generate a file called `GEO-AUDIT-REPORT.md` with the following structure:
+Save output to `reports/GEO-AUDIT-REPORT.md`. Create the `reports/` folder if it does not exist.
+
+Generate a file called `reports/GEO-AUDIT-REPORT.md` with the following structure:
 
 ```markdown
 # GEO Audit Report: [Site Name]

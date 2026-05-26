@@ -85,7 +85,7 @@ EOF
 Run the PDF generation script:
 
 ```bash
-python3 ~/.claude/skills/geo/scripts/generate_pdf_report.py /tmp/geo-audit-data.json GEO-REPORT-[brand].pdf
+python3 ~/.claude/skills/geo/scripts/generate_pdf_report.py /tmp/geo-audit-data.json reports/GEO-REPORT-[brand].pdf
 ```
 
 The script will produce a professional PDF report with:
@@ -106,10 +106,10 @@ After generation, tell the user where the PDF was saved and its file size.
 
 When the user runs this skill, follow this exact sequence:
 
-1. **Check for existing audit data** — Look for recent GEO audit reports in the current directory:
-   - `GEO-CLIENT-REPORT.md`
-   - `GEO-AUDIT-REPORT.md`
-   - Or any `GEO-*.md` files from a recent audit
+1. **Check for existing audit data** — Look for recent GEO audit reports in the `reports/` folder:
+   - `reports/GEO-CLIENT-REPORT.md`
+   - `reports/GEO-AUDIT-REPORT.md`
+   - Or any `reports/GEO-*.md` files from a recent audit
 
 2. **If no audit data exists** — Tell the user to run `/geo-audit <url>` first, then come back for the PDF.
 
@@ -128,7 +128,7 @@ When the user runs this skill, follow this exact sequence:
 
 6. **Run the PDF generator**:
    ```bash
-   python3 ~/.claude/skills/geo/scripts/generate_pdf_report.py /tmp/geo-audit-data.json "GEO-REPORT-[brand_name].pdf"
+   python3 ~/.claude/skills/geo/scripts/generate_pdf_report.py /tmp/geo-audit-data.json "reports/GEO-REPORT-[brand_name].pdf"
    ```
 
 7. **Report success** — Tell the user the PDF was generated, its location, and file size.

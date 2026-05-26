@@ -16,7 +16,7 @@ Structured data is the primary machine-readable signal that tells AI systems wha
 3. Validate detected schemas against Schema.org specifications
 4. Identify missing recommended schemas based on business type
 5. Generate ready-to-use JSON-LD code blocks
-6. Output GEO-SCHEMA-REPORT.md
+6. Output reports/GEO-SCHEMA-REPORT.md
 
 ---
 
@@ -323,7 +323,9 @@ Based on the detected business type, generate ready-to-paste JSON-LD blocks. Alw
 
 ## Output Format
 
-Generate **GEO-SCHEMA-REPORT.md** with:
+Save output to `reports/GEO-SCHEMA-REPORT.md`. Create the `reports/` folder if it does not exist.
+
+Generate **reports/GEO-SCHEMA-REPORT.md** with:
 
 ```markdown
 # GEO Schema & Structured Data Report — [Domain]
